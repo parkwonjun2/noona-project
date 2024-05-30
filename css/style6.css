@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-child {
+    padding: 28px 17px;
+    font-weight: 700;
+}
+
+main {
+    height: 970px;
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main1-1 {
+    font-size: 146px;
+    line-height: 166px;
+    color: #1ed760;
+    font-weight: 900;
+    position: relative;
+    left: 225px;
+    padding-bottom: 40px;
+}
+
+.main1-1-1 {
+    position: relative;
+    left: -2.5em;
+}
+
+.main1-2 {
+    color: #1ed760;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+} 
+
+.main1-3 {
+    text-align: center;
+}
+
+
+.main1-3-button {
+    padding: 14px 32px;
+    background-color: #1ed760;
+    border-radius: 500px;
+    font-size: inherit;
+    color: #2941ab;
+    font-weight: 700;
+    border: none;
+}
+
+.main1-3-button:hover {
+    transform: scale(1.07);
+    background-color: #2de26d;
+}
+
+
+footer {
+    height: 530px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer1 {
+    max-width: 1170px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.footer1-1 {
+    display: flex;
+    justify-content: space-between;
+    height: 346px;
+}
+
+.footer1-1-1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1-1-2 {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    padding-bottom: 15px;
+    padding-top: 3px;
+    font-size: 16px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.title {
+    color: #919496;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    background-color: #222322;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.icon:hover {
+    color: #2de26d;
+}
+
+.footer1-2{
+    color: #919496;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+.footer1-3 {
+    color: #919496;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+
+
+
+.item2 {
+    margin-right: 24px;
+    color: #919496;
+}
