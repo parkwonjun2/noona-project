@@ -5,19 +5,93 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='../css/style4.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/style5.css'>
     </head>
-    <body>
-        <div class="mother">
-            <div class="childeren">
-                childeren1
+    <body>    
+        <div class="nav" style="text-align: center; font-size: 36px; color: red;">★밑에서 보고싶은 문제를 클릭해주세요★</div>
+    
+        <div class="main main1" id="problem1">
+            <div class="main1- main1-1">Box1</div>
+            <div class="main1-2">
+                <div class="main1- main1-2-1">Box2</div>
+                <div class="main1- main1-2-2">Box3</div>
             </div>
-            <div class="childeren">
-                childeren2
+        </div>
+            
+        <div class="main main2" id="problem2">
+            <div class="main2- main2-1">Box1</div>
+            <div class="main2- main2-2">Box2</div>
+            <div class="main2- main2-3">Box3</div>
+        </div>
+
+            
+        <div class="main main3" id="problem3">
+            <div class="main3- main3-1">Box1
+                <div class="main3-- main3-1-1">Box2</div>
             </div>
-            <div class="childeren">
-                childeren3
+        </div>
+            
+        <div class="main main4" id="problem4">
+            <div class="main4-1">Box1</div>
+            <div class="main4-2">Box2</div>
+        </div>
+
+        <div class="main main5" id="problem5">
+            <div class="main5-1">Box1
+                <div class="main5-1-1">Box2</div>
+                <div class="main5-1-2">Box3</div>
             </div>
-        </div?>
+        </div>
+
+        <footer>
+            <input type="radio" id="radio1" name="toggle" value="1">
+            <label for="radio1">문제1</label>
+            
+            <input type="radio" id="radio2" name="toggle" value="2">
+            <label for="radio2">문제2</label>
+            
+            <input type="radio" id="radio3" name="toggle" value="3">
+            <label for="radio3">문제3</label>
+            
+            <input type="radio" id="radio4" name="toggle" value="4">
+            <label for="radio4">문제4</label>
+            
+            <input type="radio" id="radio5" name="toggle" value="5">
+            <label for="radio5">문제5</label>
+        </footer>
     </body>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const radios = document.querySelectorAll('input[name="toggle"]');
+            const problems = document.querySelectorAll('.main');
+
+            radios.forEach((radio) => {
+                radio.addEventListener('change', (event) => {
+                    problems.forEach((problem) => {
+                        problem.style.display = 'none';
+                    });
+
+                    const selectedProblem = document.getElementById(`problem${event.target.value}`);
+                    if (selectedProblem) {
+                        selectedProblem.style.display = 'block flex';
+                    }
+                });
+            });
+
+            radios.forEach((radio, index) => {
+                if (index === 0) {
+                    radio.checked = true;
+                    document.getElementById('problem1').style.display = 'block flex';
+                } else {
+                    radio.checked = false;
+                    document.getElementById('problem2').style.display = 'none';
+                    document.getElementById('problem3').style.display = 'none';
+                    document.getElementById('problem4').style.display = 'none';
+                    document.getElementById('problem5').style.display = 'none';
+                }
+            });
+        });
+
+    </script>
 </html>
